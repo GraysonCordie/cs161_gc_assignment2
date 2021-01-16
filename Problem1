@@ -1,0 +1,59 @@
+package edu.cgcc.cs161;
+//HEADER
+//Program Name: Assignment Two
+//Author: Grayson Cordie
+//Class: CS161 Winter 2020
+//Date: 01/17/2021
+//Description: Prints 0, positive, or negative based on value of x.
+//             Also prints large or small if value exceeds parameters.
+
+public class Assignment2 {
+	
+	/* PSUEDOCODE
+	 * Decimal variable x declared
+	 * Begin
+	 * Initialize decimal variable x a value .7
+	 * Ask if x is 0.
+	 * 	True: Print 0
+	 * 	Else: Ask if x is greater than 0.
+	 * 		True: Print positive
+	 * 		Else if less than 0: Print negative
+	 * Declare and initialize variable y as absolute value of x. 
+	 * Ask if absolute value y is less than 1.
+	 * 	True: Print small
+	 * 	Else if exceeds 1000000: Print large
+	 */
+
+	static float x;
+	
+	public static void main(String[] args) {
+		
+		x = .7f;
+		
+		if(x == 0) {
+			System.out.println("zero");
+		}else if(x>0) {
+			System.out.println("positive");
+		}else if(x<0) {
+			System.out.println("negative");
+		}
+		
+		float y = Math.abs(x);
+		
+		if(y<1) {
+			System.out.println("small");
+		}else if(y>1000000) {
+			System.out.println("large");
+		}
+		
+		
+		
+
+	}
+
+}
+
+/* FOOTER
+ * positive
+ * small
+ */
