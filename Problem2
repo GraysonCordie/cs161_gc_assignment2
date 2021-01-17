@@ -1,0 +1,63 @@
+package edu.cgcc.cs161;
+//HEADER
+//Program Name: Assignment Two: Problem 2
+//Author: Grayson Cordie
+//Class: CS161 Winter 2020
+//Date: 01/17/2021
+//Description: Checks booleans A and B with AND, OR, and NAND logic.
+public class Problem2 {
+	
+	/* PSUEDOCODE
+	 * Begin
+	 * Declare booleans A and B and initialize as true, false respectively.
+	 * Ask if A AND B are true.
+	 * 	True: Print true
+	 * 	Else: Print false
+	 * Ask if A OR B are true.
+	 * 	True: Print true
+	 *  Else: Print false
+	 * Ask if A NAND B are true.
+	 * 	True: "
+	 * 	Else: "
+	 * End
+	 */
+
+	public static void main(String[] args) {
+
+		boolean A = true;
+		boolean B = false;
+				
+		if(A&&B == true) {
+			
+			System.out.println("AND condition: True");
+		}else {
+			
+			System.out.println("And condition: False");
+		}
+		
+		if(A|B == true) {
+			
+			System.out.println("OR condition: True");
+		}else {
+			
+			System.out.println("OR condition: False");
+		}
+		
+		if(!(A&&B) == true) {
+			
+			System.out.println("NAND condition: True");
+		}else {
+			
+			System.out.println("NAND condition: False");
+		}
+		
+	}
+
+}
+
+/* FOOTER
+ * And condition: False
+ * OR condition: True
+ * NAND condition: True
+ */
+
