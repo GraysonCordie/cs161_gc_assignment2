@@ -1,0 +1,55 @@
+package edu.cgcc.cs161;
+
+//HEADER
+//Program Name: Assignment Two: Problem 3
+//Author: Grayson Cordie
+//Class: CS161 Winter 2020
+//Date: 01/17/2021
+//Description: Requests user for input between 0 and 100. If input is not within parameters, ask them to read again. Otherwise, determine if input is greater than or less than 50.
+
+
+import java.util.Scanner;
+
+public class Problem4 {
+	
+	/* PSUEDOCODE
+	 * Begin
+	 * Instantiate scanner object
+	 * Print "Enter a number, 0-100:"
+	 * declare and initialize float variable "number" as user input
+	 * Ask if number is less than 0 or greater than 100
+	 * 	True: Print "Read again."
+	 * 	Else: Ask if number is greater than 50
+	 * 		True: Print "Pass."
+	 * 		Else: Ask if number is less than 50
+	 * 			True: Print "Fail."
+	 * Close scanner object
+	 * End
+	 */
+
+	public static void main(String[] args) {
+		
+		Scanner in = new Scanner(System.in);
+		
+		System.out.println("Enter a number, 0-100:");
+		
+		float number = in.nextFloat();
+		
+		if((number<0)|(number>100)) {
+			System.out.println("Read again.");
+		}else if(number>50) {
+			System.out.println("Pass.");
+		}else if(number<=50) {
+			System.out.println("Fail.");
+		}
+		
+		in.close();
+	}
+
+}
+
+/* FOOTER
+ * Enter a number, 0-100:
+ * [enter number]
+ * Read again/Pass/Fail
+ */
