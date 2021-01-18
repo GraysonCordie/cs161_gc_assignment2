@@ -1,0 +1,52 @@
+package edu.cgcc.cs161;
+
+//HEADER
+//Program Name: Assignment Two: Problem 3
+//Author: Grayson Cordie
+//Class: CS161 Winter 2020
+//Date: 01/17/2021
+//Description: Requests user input and determines if input is positive or negative. Or 0.
+
+import java.util.Scanner;
+
+public class Problem3 {
+	
+	/* PSUEDOCODE
+	 * Begin
+	 * Instantiate scanner object
+	 * Ask user for input
+	 * Initialize float variable "number" as user input value
+	 * Ask if number is greater than 0
+	 * 	True: print "Your number is positive."
+	 * 	Else: ask if number is 0
+	 * 		True: print "Your number is 0."
+	 * 		Else: print "Your number is negative."
+	 * Close scanner object
+	 * End
+	 */
+
+	public static void main(String[] args) {
+		
+		Scanner in = new Scanner(System.in);
+
+		System.out.println("Enter a number:");
+		float number = in.nextFloat();
+		
+		if(number > 0) {
+			System.out.println("Your number is positive.");
+		}else if(number == 0){
+			System.out.println("Your number is 0.");
+		}else {
+			System.out.println("Your number is negative.");
+		}
+		
+		in.close();
+	}
+
+}
+
+/* FOOTER
+ * Enter a number:
+ * [enter number]
+ * Your number is positive, negative, 0.
+ */
